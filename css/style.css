@@ -1,0 +1,206 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.a {
+    color: white;
+    font-size: 25px;
+}
+
+.a:hover {
+    text-decoration: none;
+    color: white;
+
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-size: 45px;
+    margin: 10px;
+    color: white;
+}
+
+.menu {
+    overflow: hidden;
+    z-index: 10;
+    height: 0;
+    transition: all .5s;
+    position: fixed;
+}
+
+.hamburger {
+    overflow: hidden;
+    position: fixed;
+    cursor: pointer;
+    z-index: 11;
+    opacity: 0.9;
+}
+
+.menu {
+    height: 100vh;
+    opacity: 0.9;
+}
+
+.check {
+    opacity: 0;
+}
+
+.hamburger {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu .hamburger {
+    transition: all .5s;
+    transform: rotate(0deg);
+}
+
+
+.check:checked + .menu .hamburger {
+    transition: all .5s;
+    transform: rotate(90deg);
+}
+
+.check:checked + .menu .active1 {
+    transition: all .5s;
+    transform-origin: left;
+    transform: rotate(18deg);
+}
+
+.check:checked + .menu .active2 {
+    transition: all .5s;
+    transform-origin: left;
+    transform: rotate(-18deg);
+}
+
+.menu-line {
+    z-index: 10;
+    transition: all .5s;
+    background: #707070;
+    height: 3px;
+    width: 3%;
+    display: block;
+    margin: 5px 0;
+    min-width: 25px;
+}
+
+.user {
+    font-size: 10rem;
+}
+
+.box {
+    background: url("../image/161.jpg") center, no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about {
+    min-width: 370px;
+    transition: all .5s;
+    width: 50%;
+    margin-right: 0;
+}
+
+.about-text {
+    min-width: 290px;
+}
+
+.box > div {
+    opacity: 0.9;
+    min-width: 255px;
+}
+
+.services-box {
+    transition: all .5s;
+    width: 50%;
+    margin-right: 0;
+    min-width: 375px;
+    background: #66CBB4;
+}
+
+.services-box-svg {
+    width: 35%;
+    background: white;
+    overflow: hidden;
+    border-radius: 55px;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.services-coll {
+    min-width: 250px;
+}
+
+.services-box-svg > svg {
+    height: 100px;
+    width: 70%;
+}
+
+.fa-globe {
+    font-size: 5rem;
+}
+
+.contact {
+    transition: all .5s;
+    min-width: 375px;
+    width: 50%;
+    margin-right: 0;
+}
+
+.contact-title {
+    color: #4D9584;
+}
+
+.inp {
+    border-top: 0 solid;
+    border-left: 0 solid;
+    border-right: 0 solid;
+}
+
+.inform {
+    color: #4D9584;
+    font-size: 35px;
+}
+
+@media all and (max-width: 660px) {
+    .menu {
+        height: 0;
+    }
+
+    .hamburger {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .check:checked + .closed {
+        height: 100vh;
+    }
+
+    .check:checked + .menu {
+        transition: all 1s;
+        opacity: 0.9;
+        visibility: visible;
+    }
+
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-us-box {
+        width: 100%;
+    }
+
+    .sec-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+.error {
+    border: 1px solid red;
+}
