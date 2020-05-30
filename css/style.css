@@ -188,7 +188,7 @@ i {
     font-size: 35px;
 }
 .f-text{
-    min-width: 160px;
+    width: 85%;
 }
 @media all and (max-width: 660px) {
     .menu {
@@ -221,6 +221,9 @@ i {
     .sec-box {
         width: 100%;
         margin: 0 auto;
+    }
+    .f-text{
+        width: 100%;
     }
 }
 
