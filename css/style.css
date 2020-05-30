@@ -187,7 +187,9 @@ i {
     color: #4D9584;
     font-size: 35px;
 }
-
+.f-text{
+    min-width: 160px;
+}
 @media all and (max-width: 660px) {
     .menu {
         height: 0;
