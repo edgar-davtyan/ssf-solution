@@ -1,14 +1,17 @@
 <?php
+ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
 use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
-
-var_dump($_POST);die;
+//var_dump($_GET);die;
+$name = trim(htmlspecialchars($_POST['name']));
+$email = trim(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL));
+$msg = trim(htmlspecialchars($_POST['message']));
 
 $mail = new PHPMailer();
 $mail->isSMTP(true);
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'mail.ssf-solution.com';                   // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -18,8 +21,8 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('samzakharyan@gmail.com', 'Mailer');          //This is the email your form sends From
-    $mail->addAddress('info@ssf-solution.com', 'Joe User'); // Add a recipient address
+    $mail->setFrom($email, $name);          //This is the email your form sends From
+    $mail->addAddress('info@ssf-solution.com', 'Sam'); // Add a recipient address
     //$mail->addAddress('contact@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
@@ -31,13 +34,12 @@ try {
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Subject line goes here';
-    $mail->Body    = 'Body text goes here';
+    $mail->Subject = 'From Contact Form';
+    $mail->Body    = $msg;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    echo json_encode(['status' => 'true', 'msg' => 'Message has been sent']);
 } catch (Exception $e) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo json_encode(['status' => 'false', 'msg' => 'Message could not be sent.']);
 }
