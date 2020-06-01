@@ -101,7 +101,7 @@ i {
 .about {
     min-width: 370px;
     transition: all .5s;
-    width: 73%;
+    width: 75.8%;
     margin-right: 0;
 }
 
@@ -125,13 +125,10 @@ i {
 .services-box-svg {
     width: 150px;
     height: 150px;
-    /*width: 35%;*/
     background: white;
     overflow: hidden;
     border-radius: 50%;
-    /*border-radius: 55px;*/
     display: inline-block;
-    /*min-width: 100px;*/
 }
 
 .services-coll {
@@ -147,11 +144,17 @@ i {
 .services-box-svg > i{
     /*height: 100px;*/
     /*width: 70%;*/
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .services-box-svg > img {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
+}
+
+.about-bg {
+    /*background: url(../image/who_we_are.png) no-repeat center;*/
+    /*background-size: 100%;*/
+    height: 117vh;
 }
 
 .fa-globe {
@@ -173,8 +176,34 @@ i {
     line-height: 5px;
     visibility: hidden;
 }
+
+.about-box {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .contact-title {
     color: #4D9584;
+}
+
+
+.dev-mt {
+    margin-top: 26px!important;
+}
+.des-mt {
+    margin-top: 20px!important;
+}
+.seo-mt {
+    margin-top: 26px!important;
+}
+.smm-mt {
+    margin-top: 26px!important;
+}
+.sec-mt {
+    margin-top: 20px!important;
+}
+.sup-mt {
+    margin-top: 26px!important;
 }
 
 .inp {
