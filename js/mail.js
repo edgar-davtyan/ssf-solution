@@ -10,7 +10,6 @@ $(document).ready(function () {
     }
 
     $('#send_mail').on('click', function () {
-        alert()
         var status = '';
         var name = $('.name');
         var email = $('.email');
