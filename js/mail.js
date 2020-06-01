@@ -9,8 +9,7 @@ $(document).ready(function () {
         }
     }
 
-    $('#contact-form').submit( function (e) {
-        console.log(e);return;
+    $('.send').on('click' function () {
         var status = '';
         var name = $('.name');
         var email = $('.email');
