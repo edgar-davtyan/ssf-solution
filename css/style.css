@@ -178,6 +178,7 @@ i {
 }
 
 .about-box {
+    min-width: 345px;
     width: 70%;
     margin: 0 auto;
 }
