@@ -228,7 +228,7 @@ i {
 .f-text{
     width: 85%;
 }
-@media all and (max-width: 860px) {
+@media all and (max-width: 980px) {
     .menu {
         height: 0;
     }
