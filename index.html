@@ -10,6 +10,8 @@
     <script src="js/jQuery.js"></script>
     <script src="css/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/d320ba33b7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="image/8.png" type="image/ico" sizes="16x16">
+
 
     <meta name="title" content="Website development Company | SSF Solution">
     <meta name="description" content="We are a team of professionals who are working 24/7 to produce the most beneficial results for our clients. Our company is always ready to help companies and individuals to increase their business profitability.">
@@ -42,8 +44,8 @@
                 <ul class=" list-group-none pl-0" id="sec-box">
                     <li class="m-3 w-100"><a href="#" class="a js-scroll-trigger">Home</a></li>
                     <li class="m-3 w-100"><a href="#who-we-are" class=" a js-scroll-trigger">About US</a></li>
-                    <li class="m-3 w-100"><a href="#sec3" class="a js-scroll-trigger">Our Services</a></li>
-                    <li class="m-3 w-100"><a href="#sec4" class="a js-scroll-trigger">Contact US</a></li>
+                    <li class="m-3 w-100"><a href="#services" class="a js-scroll-trigger">Our Services</a></li>
+                    <li class="m-3 w-100"><a href="#contact" class="a js-scroll-trigger">Contact US</a></li>
                 </ul>
             </div>
         </nav>
@@ -55,7 +57,7 @@
 </section>
 <section class="container-fluid about text-align-center pb-5  col-sm-12 sec-box" id="who-we-are">
     <h3 class="text-center p-5">WHO WE ARE?</h3>
-    <div class="text-center">
+    <div class="text-center pb-5">
         <img src="image/who_we_are.png" class="img-fluid my-2" alt="">
     </div>
     <div class="about-box">
@@ -66,7 +68,7 @@
         <p class="about-text m-5-auto font-weight-bold"><img src="image/bulb.jpg" width="50px" alt="" /> Let's build something perfect together ̶i̶n̶ ̶b̶r̶i̶g̶h̶t̶n̶e̶s̶s̶ .</p>
     </div>
 </section>
-<section class="container-fluid services-box  text-align-center p-3 col-sm-12 sec-box" id="sec3">
+<section class="container-fluid services-box  text-align-center p-3 col-sm-12 sec-box" id="services">
     <h2 class="text-center pb-3 pt-3 text-center text-white mx-auto">Our Services</h2>
     <div class="row mx-0 text-center align-items-baseline">
         <div class="w-25 p-2 services-coll text-center mx-auto mb-4 col-xl-4 col-lg-5">
@@ -191,7 +193,7 @@
     </div>
 
 </section>
-<section class="container-fluid p-0  text-align-center  col-sm-12 contact sec-box" id="sec4">
+<section class="container-fluid p-0  text-align-center  col-sm-12 contact sec-box" id="contact">
     <h2 class="text-center contact-title p-5 text-center mx-auto">Contact US</h2>
     <form class="d-flex align-items-center justify-content-between  w-100 text-center contact-us" method="post" action="mail.php" id="contact_form">
         <div class="p-3 mx-auto contact-us-box ">
@@ -202,11 +204,11 @@
                 <input type="email" id="email" class="form-control font-weight-bold  w-100 inp email" name="email" placeholder="Email *">
             </label>
             <label for="message" id="message" class="d-block w-100 m-2">
-                <textarea class="form-control font-weight-bold  w-100 inp message" name="message" placeholder="Message *"></textarea>
+                <textarea class="form-control font-weight-bold inp w-100 message" name="message" placeholder="Message *"></textarea>
             </label>
             <span id="msg" style="visibility: hidden">*******</span>
             <label for="submit" id="submit" class="d-block w-50 mx-auto">
-                <input type="submit" class="form-control font-weight-bold text-center inp send" value="SEND">
+                <input type="button" class="form-control font-weight-bold text-center inp send" value="SEND" id="send_mail">
             </label>
         </div>
         <div class="p-3 mx-auto contact-us-box ">
@@ -218,10 +220,10 @@
                 <i class="fas inform fa-envelope-open-text"></i>
                 <p class="text-right">info@ssf-solution.com</p>
             </div>
-            <div class="d-flex align-items-end ">
-                <i class="fas inform fa-map-marker-alt"></i>
-                <p class="text-left">Armenia, Yerevan</p>
-            </div>
+<!--            <div class="d-flex align-items-end ">-->
+<!--                <i class="fas inform fa-map-marker-alt"></i>-->
+<!--                <p class="text-left">Armenia, Yerevan</p>-->
+<!--            </div>-->
         </div>
     </form>
 </section>

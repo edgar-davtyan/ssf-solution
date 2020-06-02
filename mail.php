@@ -19,7 +19,7 @@ try {
     $mail->Password = 's98HA7773m03*85';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
-
+    $mail->CharSet = 'UTF-8';
     //Recipients
     $mail->setFrom($email, $name);          //This is the email your form sends From
     $mail->addAddress('info@ssf-solution.com', 'Sam'); // Add a recipient address
