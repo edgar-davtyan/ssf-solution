@@ -1,6 +1,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-margin-block-start: initial;
 }
 
 .a {
@@ -39,12 +40,10 @@ i {
     z-index: 11;
     opacity: 0.9;
     overflow-y: auto;
-    -webkit-appearance: inherit;
 }
 
 .menu {
     overflow-y: auto;
-    -webkit-overflow-scrolling:touch;
     height: 100vh;
     opacity: 0.9;
 }
@@ -56,6 +55,8 @@ i {
 .hamburger {
     opacity: 0;
     visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-appearance: inherit;
 }
 
 .menu .hamburger {
@@ -234,6 +235,8 @@ i {
     .hamburger {
         opacity: 1;
         visibility: visible;
+        -webkit-backface-visibility: visible;
+        -webkit-appearance: inherit
     }
 
     .check:checked + .closed {
@@ -241,8 +244,6 @@ i {
     }
 
     .check:checked + .menu {
-        -webkit-backface-visibility: visible;
-        webkt-opacity: 0.9;
         transition: all 1s;
         opacity: 0.9;
         visibility: visible;
