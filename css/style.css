@@ -123,6 +123,7 @@ i {
 }
 
 .services-box-svg {
+    position: relative;
     width: 150px;
     height: 150px;
     background: white;
@@ -130,15 +131,22 @@ i {
     border-radius: 50%;
     display: inline-block;
 }
-
+.i-svg{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 80px;
+}
 .services-coll {
     min-width: 250px;
 }
 
 .services-box-svg > svg {
     height: 100px;
-    width: 70%;
-    margin-top: 30px;
+    width: 80%;
 }
 
 .services-box-svg > i{
