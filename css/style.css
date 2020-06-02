@@ -1,7 +1,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-margin-block-start: initial;
+    -webkit-overflow-scrolling: auto;
 }
 
 .a {
@@ -138,37 +138,40 @@ i {
     border-radius: 50%;
     display: inline-block;
 }
-.i-svg{
+
+.i-svg {
     width: 100%;
     height: 100%;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: black;
     font-size: 80px;
     overflow: hidden;
 }
 
-.i-svg > svg:hover{
+.i-svg > svg:hover {
     transition: all .5s;
     transform: scale(1.2);
 }
-.i-svg > svg{
+
+.i-svg > svg {
     transition: all .5s;
     height: 100px;
     width: 100%;
 }
+
 .services-coll {
     min-width: 250px;
 }
 
-.i-svg:hover{
+.i-svg:hover {
     transition: all 1s;
 }
 
-.services-box-svg > i{
+.services-box-svg > i {
     /*height: 100px;*/
     /*width: 70%;*/
     /*margin-top: 30px;*/
@@ -224,9 +227,11 @@ i {
     color: #4D9584;
     font-size: 35px;
 }
-.f-text{
+
+.f-text {
     width: 85%;
 }
+
 @media all and (max-width: 980px) {
     .menu {
         height: 0;
@@ -261,7 +266,8 @@ i {
         width: 100%;
         margin: 0 auto;
     }
-    .f-text{
+
+    .f-text {
         width: 100%;
     }
 }
