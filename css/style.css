@@ -67,7 +67,7 @@ i {
 
 .check:checked + .menu .hamburger {
     transition: all .5s;
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
 }
 
 .check:checked + .menu .active1 {
