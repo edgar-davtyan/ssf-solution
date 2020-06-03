@@ -12,7 +12,6 @@ html {
 .a:hover {
     text-decoration: none;
     color: white;
-
 }
 
 li {
@@ -57,29 +56,6 @@ i {
     visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
-
-.menu .hamburger {
-    transition: all .5s;
-    transform: rotate(0deg);
-}
-
-
-/*.check:checked + .menu .hamburger {
-    transition: all .5s;
-    transform: rotate(90deg);
-}*/
-
-/*.check:checked + .menu .active1 {
-    transition: all .5s;
-    transform-origin: left;
-    transform: rotate(18deg);
-}
-
-.check:checked + .menu .active2 {
-    transition: all .5s;
-    transform-origin: left;
-    transform: rotate(-18deg);
-}*/
 
 .menu-line {
     z-index: 10;
