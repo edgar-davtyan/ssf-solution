@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: auto;
+    -moz-osx-font-smoothing: auto;
 }
 
 .a {
@@ -12,6 +13,7 @@ html {
 .a:hover {
     text-decoration: none;
     color: white;
+
 }
 
 li {
@@ -55,6 +57,29 @@ i {
     opacity: 0;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
+}
+
+.menu .hamburger {
+    transition: all .5s;
+    transform: rotate(0deg);
+}
+
+
+.check:checked + .menu .hamburger {
+    transition: all .5s;
+    transform: rotate(90deg);
+}
+
+.check:checked + .menu .active1 {
+    transition: all .5s;
+    transform-origin: left;
+    transform: rotate(18deg);
+}
+
+.check:checked + .menu .active2 {
+    transition: all .5s;
+    transform-origin: left;
+    transform: rotate(-18deg);
 }
 
 .menu-line {
@@ -147,7 +172,7 @@ i {
 }
 
 .services-box-svg > i {
-    /*height: 100px;*/
+    /*height: 100px;
     /*width: 70%;*/
     /*margin-top: 30px;*/
 }
@@ -218,11 +243,11 @@ i {
         -webkit-backface-visibility: visible;
     }
 
-    .hamburger > span {
+    /*.hamburger > span {
         opacity: 0;
         visibility: hidden;
         display: none;
-    }
+    }*/
 
     .check:checked + .closed {
         height: 100vh;
