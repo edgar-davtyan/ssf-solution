@@ -54,9 +54,8 @@ i {
 }
 
 .hamburger {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    opacity: 1;
 }
 
 .menu .hamburger {
@@ -239,8 +238,6 @@ i {
 
     .hamburger {
         opacity: 1;
-        visibility: visible;
-        -webkit-backface-visibility: visible;
     }
 
     /*.hamburger > span {
