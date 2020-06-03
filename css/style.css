@@ -56,7 +56,6 @@ i {
     opacity: 0;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
-    -webkit-appearance: inherit;
 }
 
 .menu .hamburger {
@@ -65,12 +64,12 @@ i {
 }
 
 
-.check:checked + .menu .hamburger {
+/*.check:checked + .menu .hamburger {
     transition: all .5s;
     transform: rotate(90deg);
-}
+}*/
 
-.check:checked + .menu .active1 {
+/*.check:checked + .menu .active1 {
     transition: all .5s;
     transform-origin: left;
     transform: rotate(18deg);
@@ -80,7 +79,7 @@ i {
     transition: all .5s;
     transform-origin: left;
     transform: rotate(-18deg);
-}
+}*/
 
 .menu-line {
     z-index: 10;
@@ -241,7 +240,12 @@ i {
         opacity: 1;
         visibility: visible;
         -webkit-backface-visibility: visible;
-        -webkit-appearance: inherit
+    }
+
+    .hamburger > span {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
     }
 
     .check:checked + .closed {
