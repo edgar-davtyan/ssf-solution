@@ -55,27 +55,27 @@ i {
 
 .hamburger {
     overflow: hidden;
-    opacity: 1;
+    opacity: 0;
 }
 
-.menu .hamburger {
+.hamburger {
     transition: all .5s;
     transform: rotate(0deg);
 }
 
 
-.check:checked + .menu .hamburger {
+.check:checked + .hamburger {
     transition: all .5s;
     transform: rotate(90deg);
 }
 
-.check:checked + .menu .active1 {
+.check:checked + .hamburger .active1 {
     transition: all .5s;
     transform-origin: left;
     transform: rotate(18deg);
 }
 
-.check:checked + .menu .active2 {
+.check:checked + .hamburger .active2 {
     transition: all .5s;
     transform-origin: left;
     transform: rotate(-18deg);
@@ -237,16 +237,10 @@ i {
     }
 
     .hamburger {
-        opacity: 1;
+        opacity: 0.9;
     }
 
-    /*.hamburger > span {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-    }*/
-
-    .check:checked + .closed {
+    .check:checked + .hamburger + .closed {
         height: 100vh;
     }
 
