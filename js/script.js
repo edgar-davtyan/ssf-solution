@@ -8,6 +8,14 @@ for (let i = 0; i < li.length; i++) {
         check.checked = false;
     })
 }
-check.addEventListener("click", function f() {
+check.addEventListener("click", function f(ev) {
+    ev.stopPropagation()
     menu.classList.add("closed");
+    document.body.onclick = function () {
+        menu.classList.remove("closed");
+        check.checked = false;
+        menu.addEventListener("click", function (ev) {
+            ev.stopPropagation()
+        })
+    }
 });
