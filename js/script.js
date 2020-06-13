@@ -8,15 +8,21 @@ for (let i = 0; i < li.length; i++) {
         check.checked = false;
     })
 }
-check.addEventListener("click", function f(ev) {
+check.addEventListener("click", function (ev) {
     ev.stopPropagation()
+    if (check.checked) {
+        document.querySelector(".hamburger").addEventListener("click", function (ev) {
+                ev.stopPropagation()
+            }
+        )
+    }
     menu.classList.add("closed");
+    menu.addEventListener("click", function (ev) {
+        ev.stopPropagation()
+    })
     document.body.onclick = function () {
         menu.classList.remove("closed");
         check.checked = false;
-        menu.addEventListener("click", function (ev) {
-            ev.stopPropagation()
-        })
     }
 });
 
