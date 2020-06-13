@@ -1,6 +1,5 @@
 
 html {
-
     -webkit-overflow-scrolling: touch;
 }
 
@@ -26,6 +25,7 @@ i {
 }
 
 .menu {
+    background: #343a40 !important;
     overflow: hidden;
     z-index: 10;
     height: 0;
@@ -70,6 +70,7 @@ i {
 .check:checked + .hamburger {
     transition: all .5s;
     transform: rotate(90deg);
+    background: #343a4000 !important;
 }
 
 .check:checked + .hamburger .active1 {
