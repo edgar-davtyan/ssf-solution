@@ -71,6 +71,9 @@ i {
     transition: all .5s;
     transform: rotate(90deg);
     background: #343a4000 !important;
+    border: 1px solid #343a40 !important;
+    border-radius: 10px;
+    box-shadow: 1px 0 1px 0 #343a40 !important;
 }
 
 .check:checked + .hamburger .active1 {
