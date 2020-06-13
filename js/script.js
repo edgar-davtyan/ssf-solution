@@ -19,3 +19,12 @@ check.addEventListener("click", function f(ev) {
         })
     }
 });
+
+$(".a").click(function () {
+    let id = $(this).attr("href");
+    let scrollElem = $(id);
+    let offsetTop = $(scrollElem).offset().top;
+    $("html, body").animate({
+        scrollTop: offsetTop
+    }, 1000)
+})
